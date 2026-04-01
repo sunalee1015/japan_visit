@@ -32,26 +32,6 @@ japan_visit/
     └── analysis/        # 데이터 분석 및 전처리에 사용된 보조 스크립트
 ```
 
-## ⚙️ 설치 및 실행 방법
-
-### 1. 가상환경 및 패키지 설치
-`uv`를 사용하여 가상환경을 활성화하고 필요한 패키지를 설치합니다:
-
-```powershell
-pip install uv
-uv venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-uv pip install -r requirements.txt
-```
-
-### 2. 데이터 파일 배치
-본 저장소에는 보안 및 용량 문제로 원본 데이터(`Total_Dataset_analysis_20260321.xlsx`)가 포함되어 있지 않습니다.
-- `japan_visit/data/` 폴더를 생성하고, 해당 엑셀 파일을 위치시켜 주십시오.
-
-### 3. 대시보드 실행
-```powershell
-uv run streamlit run src/app.py
-```
 
 ## 📄 주요 리포트
 - [데이터 EDA 분석 리포트](docs/eda_report.md)
